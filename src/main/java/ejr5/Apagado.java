@@ -1,6 +1,6 @@
 package ejr5;
 
-public class Apagado implements IStateCompu {
+public class Apagado implements IStateCelu {
 
 
     @Override

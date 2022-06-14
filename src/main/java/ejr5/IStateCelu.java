@@ -1,5 +1,5 @@
 package ejr5;
 
-public interface IStateCompu {
+public interface IStateCelu {
     void resourceManager(Celular computadora) throws InterruptedException;
 }

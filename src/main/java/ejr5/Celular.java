@@ -4,7 +4,7 @@ public class Celular {
     private Programas programas;
     private MemoriaRAM memoriaRam;
     private CPU cpu;
-    private IStateCompu state;
+    private IStateCelu state;
 
     public Celular(){
         memoriaRam = new MemoriaRAM();
@@ -40,11 +40,11 @@ public class Celular {
         this.cpu = cpu;
     }
 
-    public IStateCompu getState() {
+    public IStateCelu getState() {
         return state;
     }
 
-    public void setState(IStateCompu state) {
+    public void setState(IStateCelu state) {
         this.state = state;
     }
 

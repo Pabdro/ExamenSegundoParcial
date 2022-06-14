@@ -2,7 +2,7 @@ package ejr5;
 
 import java.util.Random;
 
-public class Encendido implements IStateCompu{
+public class Encendido implements IStateCelu {
     @Override
     public void resourceManager(Celular computadora) throws InterruptedException {
         System.out.println("\n <<< PC EN USO >>> \n");

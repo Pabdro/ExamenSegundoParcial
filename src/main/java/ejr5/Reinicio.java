@@ -1,6 +1,6 @@
 package ejr5;
 
-public class Reinicio implements IStateCompu{
+public class Reinicio implements IStateCelu {
     @Override
     public void resourceManager(Celular computadora) throws InterruptedException {
         System.out.println("\n <<< REINICIANDO :) >>> \n");
