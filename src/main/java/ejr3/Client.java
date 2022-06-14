@@ -9,6 +9,6 @@ public class Client {
         paginaWeb.attach(new UserFacebook("publicaciones y tambien imagenes ", new Persona("9858", "Joseph")));
         paginaWeb.attach(new UserFacebook("publicaciones y tambien imagenes ", new Persona("34634", "Marcos")));
 
-        paginaWeb.noti(new Notificaciones("nuevo video", " 5 imagenes"));
+        paginaWeb.noti(new Notificaciones("nuevo video", "5"));
     }
 }
