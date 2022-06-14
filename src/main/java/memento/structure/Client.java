@@ -24,6 +24,7 @@ public class Client {
         caretaker.addMemento(originator.createMemento()); // [2]
 
         concreteObject= originator.restoreMemento(caretaker.getMemento(1));
+        concreteObject= originator.restoreMemento(caretaker.getMemento(0));
         System.out.println("*************VALORES ACTUALES ********************");
         concreteObject.showInfo();
 
