@@ -16,14 +16,18 @@ public class Client {
         c2.setCi("21312312");
         c2.setNombre("Jose");
         c2.setMatricula("holasas");
+        c2.setTipo("estudiante");
         Administrativos administrativos = new Administrativos(mediator);
+        administrativos.setCi("12312312");
+        administrativos.setNombre("Rodrigo");
+        administrativos.setCargo("organizador");
+        administrativos.setTipo("administrador");
 
         mediator.addToChat(c1);
         mediator.addToChat(c2);
         mediator.addToChat(administrativos);
 
-        c1.send("este mensaje es para el C2 ---> pregunta");
-        c2.send("mensaje claro --> respuesta");
+        administrativos.send("esto es para todos");
     }
 
 }

@@ -20,11 +20,9 @@ public class Comunicacion implements Mediator {
             if(!emisor.getCi().equals(p.getCi())){
                 if (emisor.getTipo().equals("administrador")){
                     p.received(msg);
-                } else if ((emisor.getTipo().equals("estudiante")&&emisor.equals("estudiante"))||
-                        (emisor.getTipo().equals("estudiante")&&emisor.equals("profesor"))||(emisor.getTipo().equals("estudiante")&&emisor.equals("administrador"))){
+                } else if (emisor.getTipo().equals("estudiante") && p.getTipo().equals("estudiante")){
                     p.received(msg);
-                } else if ((emisor.getTipo().equals("profesor")&& emisor.equals("profesor"))
-                        ||(emisor.getTipo().equals("profesor")&&emisor.equals("estudiante"))){
+                } else if (emisor.getTipo().equals("profesor")&& p.getTipo().equals("profesor")){
                     p.received(msg);
                 }
             }
